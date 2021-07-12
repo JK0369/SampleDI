@@ -14,8 +14,12 @@ class BDIContainer {
     }
 
     func makeBViewModel(countNumber: Int) -> BViewModel {
-        let dependencies = DefaultBViewModel.Dependencies(countNumber: countNumber,
-                                                          someUseCase: SomeUseCase())
-        return DefaultBViewModel(dependencies: dependencies)
+        return DefaultBViewModel(countNumber: countNumber, dependencies: self) // 추가: self로 주입
+    }
+}
+
+extension BDIContainer: BDependencies { // 추가
+    func getSomeUseCase() -> SomeUseCase {
+        return SomeUseCase()
     }
 }

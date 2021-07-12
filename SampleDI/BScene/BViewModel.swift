@@ -15,15 +15,25 @@ protocol BOutput {
 
 protocol BViewModel: BInput, BOutput {}
 
+protocol BDependencies { // 추가
+    func getSomeUseCase() -> SomeUseCase
+}
+
 class DefaultBViewModel: BViewModel {
-    let dependencies: Dependencies
+    let dependencies: BDependencies // 추가
+    let countNumber: Int
 
     struct Dependencies {
-        let countNumber: Int
         let someUseCase: SomeUseCase
     }
 
-    init(dependencies: Dependencies) {
+    init(countNumber: Int, dependencies: BDependencies) {
+        self.countNumber = countNumber
         self.dependencies = dependencies
+    }
+
+    func executeSomeUsecase() { // usecase는 주입받은 usecase이용
+        let usecase = dependencies.getSomeUseCase()
+        print("execute usecase")
     }
 }
