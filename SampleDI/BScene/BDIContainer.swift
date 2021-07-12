@@ -14,6 +14,8 @@ class BDIContainer {
     }
 
     func makeBViewModel(countNumber: Int) -> BViewModel {
-        return DefaultBViewModel(dependencies: DefaultBViewModel.Dependencies.init(countNumber: countNumber))
+        let dependencies = DefaultBViewModel.Dependencies(countNumber: countNumber,
+                                                          someUseCase: SomeUseCase())
+        return DefaultBViewModel(dependencies: dependencies)
     }
 }

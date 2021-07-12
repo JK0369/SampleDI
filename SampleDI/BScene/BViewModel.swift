@@ -9,6 +9,7 @@ import Foundation
 
 protocol BInput {
 }
+
 protocol BOutput {
 }
 
@@ -19,6 +20,7 @@ class DefaultBViewModel: BViewModel {
 
     struct Dependencies {
         let countNumber: Int
+        let someUseCase: SomeUseCase
     }
 
     init(dependencies: Dependencies) {

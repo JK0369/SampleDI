@@ -17,6 +17,7 @@
 		E0487FB1269C8FEA00959D2A /* BDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0487FB0269C8FEA00959D2A /* BDIContainer.swift */; };
 		E0487FB3269C907300959D2A /* ADIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0487FB2269C907300959D2A /* ADIContainer.swift */; };
 		E0487FB5269C909F00959D2A /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0487FB4269C909F00959D2A /* AppDIContainer.swift */; };
+		E0487FBB269C995B00959D2A /* SomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0487FBA269C995B00959D2A /* SomeUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E0487FB0269C8FEA00959D2A /* BDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDIContainer.swift; sourceTree = "<group>"; };
 		E0487FB2269C907300959D2A /* ADIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADIContainer.swift; sourceTree = "<group>"; };
 		E0487FB4269C909F00959D2A /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		E0487FBA269C995B00959D2A /* SomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				E0487FAA269C7D8700959D2A /* AScene */,
 				E0487FAB269C7D8B00959D2A /* BScene */,
 				E0487F92269C7D3900959D2A /* AppDelegate.swift */,
+				E0487FBA269C995B00959D2A /* SomeUseCase.swift */,
 				E0487F9B269C7D3C00959D2A /* Assets.xcassets */,
 				E0487F9D269C7D3C00959D2A /* LaunchScreen.storyboard */,
 				E0487FA0269C7D3C00959D2A /* Info.plist */,
@@ -171,6 +174,7 @@
 				E0487F93269C7D3900959D2A /* AppDelegate.swift in Sources */,
 				E0487FA9269C7D6700959D2A /* AViewModel.swift in Sources */,
 				E0487FAF269C7E0E00959D2A /* BViewModel.swift in Sources */,
+				E0487FBB269C995B00959D2A /* SomeUseCase.swift in Sources */,
 				E0487FB1269C8FEA00959D2A /* BDIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
